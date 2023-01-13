@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<table id="calculatorTable">
+    <tr>
+        <td colspan="3"><input id="resultText" type="text"></td>
+        <td><input onclick="clearExpression()" type="button" value="c"/></td>
+    </tr>
+    <tr>
+        <td><input onclick="updateExpression('1')" type="button" value="1"></td>
+        <td><input onclick="updateExpression('2')" type="button" value="2"></td>
+        <td><input onclick="updateExpression('3')" type="button" value="3"></td>
+        <td><input onclick="updateExpression('/')" type="button" value="/"></td>
+    </tr>
+    <tr>
+        <td><input onclick="updateExpression('4')" type="button" value="4"></td>
+        <td><input onclick="updateExpression('5')" type="button" value="5"></td>
+        <td><input onclick="updateExpression('6')" type="button" value="6"></td>
+        <td><input onclick="updateExpression('*')" type="button" value="*"></td>
+    </tr>
+    <tr>
+        <td><input onclick="updateExpression('7')" type="button" value="7"></td>
+        <td><input onclick="updateExpression('8')" type="button" value="8"></td>
+        <td><input onclick="updateExpression('9')" type="button" value="9"></td>
+        <td><input onclick="updateExpression('-')" type="button" value="-"></td>
+    </tr>
+    <tr>
+        <td><input onclick="updateExpression('0')" type="button" value="0"></td>
+        <td><input onclick="updateExpression('.')" type="button" value="."></td>
+        <td><input onclick="calculateExpression()" type="button" value="="></td>
+        <td><input onclick="updateExpression('+')" type="button" value="+"></td>
+    </tr>
+</table>
+
+<script src="update.js"></script>
+<script src="math.js"></script>
+
+</body>
+
+</html>
